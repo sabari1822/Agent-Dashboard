@@ -1,10 +1,20 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-const itemSchema = new mongoose.Schema({
-  firstName: String,
-  phone: String,
-  notes: String,
-  assignedTo: { type: mongoose.Schema.Types.ObjectId, ref: "Agent" }
+const ItemSchema = new mongoose.Schema({
+    firstName: String,
+    phone: String,
+    notes: String,
+    assignedTo: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'agents'
+    },
+    
+    createdBy: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'employees',
+        required: true
+    }
 });
 
-module.exports = mongoose.model("Item", itemSchema);
+const Item = mongoose.model("items", ItemSchema);
+module.exports = Item;
