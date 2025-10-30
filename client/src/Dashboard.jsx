@@ -49,7 +49,7 @@ export default function Dashboard() {
       <div className="container my-5">
         <h1 className="fw-bold text-center mb-4">Welcome to Trial Website 🚀</h1>
         <p className="text-muted text-center">
-          This website was made for CSTech Infosolutions Private Limited
+          This website was made for Primetrade.ai
         </p>
       </div>
     </>

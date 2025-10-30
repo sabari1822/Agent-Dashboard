@@ -1,8 +1,8 @@
-This project was made for CSTech infosolutions Private limited 
+This project was made for Primetrade.ai
 Used MERN stack for this as told
  
 
- Mainly three features were asked
+ Mainly three features were done
 
  1.User login
  2.Add agents
